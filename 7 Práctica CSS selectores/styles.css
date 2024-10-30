@@ -1,19 +1,27 @@
+/* Estilo para el texto rojo */
 .red-text {
   color: red;
 }
-h1:nth-of-type(2) {
-  color: green;
-}
+
+/* Estilo para el texto azul */
 #blue-text {
   color: blue;
 }
+
+/* Efecto al pasar el cursor sobre el párrafo */
 .hover-text:hover {
-  color: orange;
-}
-.first-line::first-line {
+  color: green;
   font-weight: bold;
 }
+
+/* Estilo para la primera línea del párrafo */
+.first-line {
+  font-style: italic;
+}
+
+/* Estilo para el contenido antes del párrafo */
 .before-text::before {
   content: "Nota: ";
   font-weight: bold;
+  color: orange;
 }
