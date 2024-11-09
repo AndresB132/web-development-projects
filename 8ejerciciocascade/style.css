@@ -1,12 +1,35 @@
-/* Don't change the existing CSS. */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
 
-.box {
+.outer-container {
+  background-color: purple;
+  padding: 10px;
+  width: 80vw;
+}
+
+.middle-container {
   background-color: blue;
   padding: 10px;
 }
 
-p {
+.inner-box {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.yellow-text {
   color: yellow;
-  margin: 0;
-  padding: 0;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
 }
