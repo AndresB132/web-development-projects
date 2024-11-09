@@ -1,35 +1,55 @@
+/* Reset de márgenes y padding para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-color: white;
+  background-color: #f4f4f4; /* Fondo neutro */
+  font-family: Arial, sans-serif; /* Fuente simple y moderna */
 }
 
-.outer-container {
-  background-color: purple;
-  padding: 10px;
+/* Estilos para el contenedor exterior con ID */
+#outer-box {
+  background-color: purple; /* Fondo morado */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
   width: 80vw;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los contenedores internos */
 }
 
-.middle-container {
-  background-color: blue;
-  padding: 10px;
+/* Estilos para los contenedores internos con clase .box */
+.box {
+  background-color: blue; /* Fondo azul */
+  padding: 20px;
+  border-radius: 0px; /* Bordes redondeados */
+  flex-direction: column;
 }
 
+/* Estilo para los textos amarillos */
+.box p {
+  color: yellow; /* Texto amarillo */
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los cuadros rojos dentro de .box */
 .inner-box {
-  background-color: red;
-  padding: 10px;
-  color: white;
-  font-size: 20px;
-  text-align: left;
-  margin-bottom: 10px;
+  background-color: red; /* Fondo rojo */
+  padding: 15px;
+  color: white; /* Texto blanco */
 }
 
-.yellow-text {
-  color: yellow;
-  font-size: 20px;
+/* Estilo para los textos blancos dentro de los cuadros rojos */
+.white-text {
+  font-size: 18px; /* Tamaño de fuente para el texto blanco */
   text-align: left;
-  margin-bottom: 10px;
 }
