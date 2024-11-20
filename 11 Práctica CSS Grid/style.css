@@ -1,52 +1,30 @@
-/* Estilo del contenedor */
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-  grid-gap: 10px; /* Espaciado entre las celdas */
-  grid-auto-rows: minmax(100px, auto); /* Filas con un tamaño mínimo de 100px */
-  padding: 20px;
-  background-color: #f4f4f4;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
-
-/* Estilo de las celdas */
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #007bff;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Posicionamiento personalizado para las celdas */
 .one {
-  grid-column: 1 / 3; /* Ocupa de la columna 1 a la 3 */
-  grid-row: 1; /* Ocupa la fila 1 */
+  grid-column: 1 / 3;
+  grid-row: 1;
 }
-
 .two {
-  grid-column: 2 / 4; /* Ocupa de la columna 2 a la 4 */
-  grid-row: 1 / 3; /* Ocupa de la fila 1 a la 3 */
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
 }
-
 .three {
-  grid-column: 1; /* Ocupa la columna 1 */
-  grid-row: 2 / 5; /* Ocupa de la fila 2 a la 5 */
+  grid-column: 1;
+  grid-row: 2 / 5;
 }
-
 .four {
-  grid-column: 3; /* Ocupa la columna 3 */
-  grid-row: 3; /* Ocupa la fila 3 */
+  grid-column: 3;
+  grid-row: 3;
 }
-
 .five {
-  grid-column: 2; /* Ocupa la columna 2 */
-  grid-row: 4; /* Ocupa la fila 4 */
+  grid-column: 2;
+  grid-row: 4;
 }
-
 .six {
-  grid-column: 3; /* Ocupa la columna 3 */
-  grid-row: 4; /* Ocupa la fila 4 */
-}
+  grid-column: 3;
+  grid-row: 4;
+}  
