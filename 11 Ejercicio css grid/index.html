@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chessboard</title>
   <style>
-    /* Write your code here */
-    /* Each square should be 100px by 100px */
-    /* My colours for white: #f0d9b5, black: #b58863 */
+    /* Configuración general del programa */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #333;
+    }
+
+    /* Contenedor del tablero */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(8, 100px); 
+      grid-template-rows: repeat(8, 100px); 
+      border: 5px solid black;
+    }
+
+    /* Estilo de los cuadrados del tablero */
+    .white {
+      background-color: #f0d9b5; /* Color blanco del tablero */
+      width: 100px;
+      height: 100px;
+    }
+
+    .black {
+      background-color: #b58863; /* Color negro del tablero */
+      width: 100px;
+      height: 100px;
+    }
   </style>
 </head>
 
